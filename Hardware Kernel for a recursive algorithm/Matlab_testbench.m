@@ -15,7 +15,7 @@ xt.signals.dimensions = 1;
 % list = get_param('CEN598_HW2/From Workspace','ObjectParameters');
 
 % Set the value of a parameter in a block
-BlockName = 'HW3_Q5';
+BlockName = 'HW3';  %% Give your blockname. It should match with the name of your model
 
 set_param([BlockName '/To Workspace'],'VariableName','yt1')
 set_param([BlockName '/To Workspace'],'SaveFormat',['Structure With Time'])
