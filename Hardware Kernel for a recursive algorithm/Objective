@@ -1,0 +1,15 @@
+Objective
+
+You will design a hardware kernel for a simple recursive
+algorithm using an optimized number format. The function to be implemented is
+defined as 𝑧𝑧 = 𝑥𝑥100 + 𝑥𝑥99 + ⋯ + 𝑥𝑥2 + 𝑥𝑥, which can be calculated by the following
+recursive algorithm:
+                            𝑦 = 1;
+                            𝑧 = 0;
+                            for (𝑖 = 1; 𝑖 ≤ 100; 𝑖 = 𝑖 + 1) {
+                                    𝑦 = 𝑦 × 𝑥;
+                                    𝑧 = 𝑧 + 𝑦;
+                            }.
+
+Note that both the operations inside the for loop have loop-carried data
+dependency. 
