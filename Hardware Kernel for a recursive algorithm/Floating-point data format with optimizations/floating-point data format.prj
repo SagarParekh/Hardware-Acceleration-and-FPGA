@@ -1,0 +1,26 @@
+add_file -verilog -lib work "SynLib.v"
+add_file -verilog -lib work "HW3.v"
+set_option -top_module HW3
+add_file -constraint "HW3.fdc"
+impl -add rev_1
+set_option -vlog_std v2001
+set_option -technology Virtex7
+set_option -part XC7VX485T
+set_option -package FFG1761
+set_option -speed_grade -1
+set_option -frequency auto
+set_option -default_enum_encoding default
+set_option -symbolic_fsm_compiler 1
+set_option -resource_sharing 1
+
+set_option -retiming 1
+
+set_option -write_verilog 1
+set_option -write_vhdl 0
+
+set_option -write_apr_constraint 1
+
+set_option -constraint -clear
+set_option -disable_io_insertion 0
+impl -active "rev_1"
+set_option -constraint -enable "HW3.fdc"
