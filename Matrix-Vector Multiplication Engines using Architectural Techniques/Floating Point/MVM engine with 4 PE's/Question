@@ -1,0 +1,1 @@
+Re-design the double-precision floating-point MVM engine with 4 PEs in parallel for the same throughput and test your design again. To handle a vector length of 64, an interleaving factor of 16 is needed. In this architecture, what is the minimum clock frequency required for achieving the target throughput? What is the loop latency (P2+P3) required for the correct functionality?
