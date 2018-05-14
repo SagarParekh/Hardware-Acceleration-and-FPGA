@@ -1,0 +1,10 @@
+Here we have replaced all the floating-point units with fixed point units.
+Bits for port in: (21,20)
+Bits for multiplier: (42,41)
+Bits in adder: (48,41)
+
+We know our design can tolerate MSE <0.1% so we can further reduce our word lengths of various units and reduce the precision loss and get a more precise value. By gradually reducing the fractional word length we can compare and find out the minimum word length need for assuring that MSE<0.1% is as follows:
+
+Bits for port in: (8,7)
+Bits for multiplier: (8,7)
+Bits in adder: (14,7)
