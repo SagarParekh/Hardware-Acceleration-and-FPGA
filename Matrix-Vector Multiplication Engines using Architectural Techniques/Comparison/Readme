@@ -1,1 +1,2 @@
+Question: 
 Map the floating-point design (4 PE's) and the fixed-point design into a Xilinx Virtex 7 XC7VX485T-2FFG1761 FPGA target with the required frequency, respectively. Submit the screen shots showing the detail resource utilization and timing summary. Compare the resource utilization difference and notice the overhead of doing floating-point arithmetic on FPGAs. Also notice the difference in maximum operating frequency
