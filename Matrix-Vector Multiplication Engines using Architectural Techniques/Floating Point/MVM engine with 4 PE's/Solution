@@ -1,0 +1,5 @@
+In this question we are designing the block diagram taking the interleaving factor of 16 this time. This will result in 4 PEs with 16 row inputs. Since we have increased the number of stages to 16 the MUX and DEMUX’s speed would increase by 16 times.
+
+As compared to the above question here we have an interleaving factor of 16 and thus we can feed a column of required data every 16 cycles. Thus we can produce 64 valid solutions in every 16x16=1024 cycles.
+
+Now if we calculate with our given throughput which is 31.56 M, we get f>=504.96MHz.
