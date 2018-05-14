@@ -1,0 +1,78 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : Question_3
+Version: L-2016.03
+Date   : Sat Feb 24 22:42:22 2018
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: ss0p75v125c   Library: saed32rvt_ss0p75v125c
+Wire Load Model Mode: enclosed
+
+  Startpoint: mySubsystem1/mySubsystem/myFP_Mult/Delay1_block/GenBlock.theDelay/outreg_reg[6]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: mySubsystem1/mySubsystem/myFP_Mult/Delay5_block/GenBlock.theDelay/outreg_reg[63]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  Question_3         280000                saed32rvt_ss0p75v125c
+  Subsystem1_Subsystem
+                     70000                 saed32rvt_ss0p75v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  mySubsystem1/mySubsystem/myFP_Mult/Delay1_block/GenBlock.theDelay/outreg_reg[6]/CLK (DFFARX1_LVT)
+                                                          0.00 #     0.00 r
+  mySubsystem1/mySubsystem/myFP_Mult/Delay1_block/GenBlock.theDelay/outreg_reg[6]/Q (DFFARX1_LVT)
+                                                          0.23       0.23 r
+  mySubsystem1/mySubsystem/U1609/Y (INVX8_LVT)            0.04       0.27 f
+  mySubsystem1/mySubsystem/U2264/Y (NOR2X0_LVT)           0.10       0.37 r
+  mySubsystem1/mySubsystem/U2272/C1 (HADDX1_LVT)          0.07       0.44 r
+  mySubsystem1/mySubsystem/U2380/CO (FADDX1_LVT)          0.10       0.54 r
+  mySubsystem1/mySubsystem/U2365/S (FADDX1_LVT)           0.16       0.70 f
+  mySubsystem1/mySubsystem/U2469/CO (FADDX1_LVT)          0.10       0.81 f
+  mySubsystem1/mySubsystem/U2470/CO (FADDX1_LVT)          0.10       0.91 f
+  mySubsystem1/mySubsystem/U2707/S (FADDX1_LVT)           0.18       1.09 r
+  mySubsystem1/mySubsystem/U5391/CO (FADDX1_LVT)          0.10       1.19 r
+  mySubsystem1/mySubsystem/U5393/CO (FADDX1_LVT)          0.11       1.30 r
+  mySubsystem1/mySubsystem/U2708/CO (FADDX1_LVT)          0.11       1.41 r
+  mySubsystem1/mySubsystem/U1794/Y (XOR3X2_LVT)           0.18       1.59 f
+  mySubsystem1/mySubsystem/U1793/Y (AND2X1_LVT)           0.09       1.68 f
+  mySubsystem1/mySubsystem/U1790/Y (AO21X1_LVT)           0.09       1.77 f
+  mySubsystem1/mySubsystem/U1199/Y (NAND2X0_LVT)          0.05       1.81 r
+  mySubsystem1/mySubsystem/U1198/Y (AND2X1_LVT)           0.07       1.88 r
+  mySubsystem1/mySubsystem/U2069/Y (OA21X1_LVT)           0.08       1.96 r
+  mySubsystem1/mySubsystem/U2083/Y (OA21X1_LVT)           0.07       2.03 r
+  mySubsystem1/mySubsystem/U1036/Y (OA21X2_LVT)           0.10       2.13 r
+  mySubsystem1/mySubsystem/U5439/Y (INVX8_LVT)            0.04       2.17 f
+  mySubsystem1/mySubsystem/U7428/Y (AOI21X1_LVT)          0.13       2.30 r
+  mySubsystem1/mySubsystem/U7429/Y (XOR2X2_LVT)           0.11       2.41 f
+  mySubsystem1/mySubsystem/U1144/Y (MUX21X2_LVT)          0.10       2.51 f
+  mySubsystem1/mySubsystem/myFP_Mult/Delay5_block/GenBlock.theDelay/outreg_reg[63]/D (DFFARX1_LVT)
+                                                          0.00       2.51 f
+  data arrival time                                                  2.51
+
+  clock clk (rise edge)                                   1.98       1.98
+  clock network delay (ideal)                             0.00       1.98
+  mySubsystem1/mySubsystem/myFP_Mult/Delay5_block/GenBlock.theDelay/outreg_reg[63]/CLK (DFFARX1_LVT)
+                                                          0.00       1.98 r
+  library setup time                                     -0.07       1.91
+  data required time                                                 1.91
+  --------------------------------------------------------------------------
+  data required time                                                 1.91
+  data arrival time                                                 -2.51
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.60
+
+
+1

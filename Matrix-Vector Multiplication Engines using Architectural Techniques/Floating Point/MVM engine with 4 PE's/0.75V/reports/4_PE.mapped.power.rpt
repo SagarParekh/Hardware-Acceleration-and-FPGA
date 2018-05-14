@@ -1,0 +1,71 @@
+ 
+****************************************
+Report : power
+        -analysis_effort low
+Design : Question_3
+Version: L-2016.03
+Date   : Sat Feb 24 22:32:00 2018
+****************************************
+
+
+Library(s) Used:
+
+    saed32hvt_ss0p7v125c (File: /usr/local/synopsys/SAED32_EDK/lib/stdcell_hvt/db_nldm/saed32hvt_ss0p7v125c.db)
+    saed32rvt_ss0p7v125c (File: /usr/local/synopsys/SAED32_EDK/lib/stdcell_rvt/db_nldm/saed32rvt_ss0p7v125c.db)
+    saed32lvt_ss0p7v125c (File: /usr/local/synopsys/SAED32_EDK/lib/stdcell_lvt/db_nldm/saed32lvt_ss0p7v125c.db)
+
+
+Operating Conditions: ss0p7v125c   Library: saed32rvt_ss0p7v125c
+Wire Load Model Mode: enclosed
+
+Design        Wire Load Model            Library
+------------------------------------------------
+Question_3             280000            saed32rvt_ss0p7v125c
+Subsystem              70000             saed32rvt_ss0p7v125c
+Subsystem1             70000             saed32rvt_ss0p7v125c
+Subsystem2             70000             saed32rvt_ss0p7v125c
+Subsystem3             70000             saed32rvt_ss0p7v125c
+Subsystem_Subsystem    70000             saed32rvt_ss0p7v125c
+Subsystem1_Subsystem   70000             saed32rvt_ss0p7v125c
+Subsystem2_Subsystem   70000             saed32rvt_ss0p7v125c
+Subsystem3_Subsystem   70000             saed32rvt_ss0p7v125c
+Subsystem_Subsystem_FP_Add
+                       35000             saed32rvt_ss0p7v125c
+Subsystem1_Subsystem_FP_Add
+                       35000             saed32rvt_ss0p7v125c
+Subsystem2_Subsystem_FP_Add
+                       35000             saed32rvt_ss0p7v125c
+Subsystem3_Subsystem_FP_Add
+                       35000             saed32rvt_ss0p7v125c
+
+
+Global Operating Voltage = 0.7  
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000ff
+    Time Units = 1ns
+    Dynamic Power Units = 1uW    (derived from V,C,T units)
+    Leakage Power Units = 1pW
+
+
+  Cell Internal Power  =  29.0906 mW   (93%)
+  Net Switching Power  =   2.0782 mW    (7%)
+                         ---------
+Total Dynamic Power    =  31.1687 mW  (100%)
+
+Cell Leakage Power     =  12.7481 mW
+
+
+                 Internal         Switching           Leakage            Total
+Power Group      Power            Power               Power              Power   (   %    )  Attrs
+--------------------------------------------------------------------------------------------------
+io_pad             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+memory             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+black_box          0.0000            0.0000            0.0000            0.0000  (   0.00%)
+clock_network      0.0000            0.0000            0.0000            0.0000  (   0.00%)
+register       2.3966e+04          219.5894        3.2684e+09        2.7454e+04  (  62.51%)
+sequential         0.0000            0.0000            0.0000            0.0000  (   0.00%)
+combinational  5.1245e+03        1.8586e+03        9.4798e+09        1.6463e+04  (  37.49%)
+--------------------------------------------------------------------------------------------------
+Total          2.9090e+04 uW     2.0781e+03 uW     1.2748e+10 pW     4.3917e+04 uW
+1

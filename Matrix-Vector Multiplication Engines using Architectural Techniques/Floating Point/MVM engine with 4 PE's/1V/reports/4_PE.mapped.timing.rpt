@@ -1,0 +1,80 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : Question_3
+Version: L-2016.03
+Date   : Sat Feb 24 22:32:47 2018
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: ss0p95v125c   Library: saed32rvt_ss0p95v125c
+Wire Load Model Mode: enclosed
+
+  Startpoint: mySubsystem/mySubsystem/myFP_Mult/Delay1_block/GenBlock.theDelay/outreg_reg[29]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: mySubsystem/mySubsystem/myFP_Mult/Delay11_block/GenBlock.theDelay/outreg_reg[2]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  Question_3         280000                saed32rvt_ss0p95v125c
+  Subsystem          70000                 saed32rvt_ss0p95v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  mySubsystem/mySubsystem/myFP_Mult/Delay1_block/GenBlock.theDelay/outreg_reg[29]/CLK (DFFARX2_RVT)
+                                                          0.00 #     0.00 r
+  mySubsystem/mySubsystem/myFP_Mult/Delay1_block/GenBlock.theDelay/outreg_reg[29]/Q (DFFARX2_RVT)
+                                                          0.23       0.23 r
+  mySubsystem/U2584/Y (XNOR2X1_HVT)                       0.18       0.41 f
+  mySubsystem/U7091/Y (OAI22X1_HVT)                       0.13       0.53 r
+  mySubsystem/U7103/CO (FADDX1_HVT)                       0.15       0.69 r
+  mySubsystem/U1723/Y (AO22X1_RVT)                        0.08       0.77 r
+  mySubsystem/U5376/Y (XOR3X2_LVT)                        0.11       0.88 r
+  mySubsystem/U4736/Y (OR2X1_LVT)                         0.04       0.92 r
+  mySubsystem/U6220/Y (AO22X1_LVT)                        0.05       0.97 r
+  mySubsystem/U4127/CO (FADDX1_LVT)                       0.07       1.04 r
+  mySubsystem/U1850/Y (AO22X1_LVT)                        0.06       1.10 r
+  mySubsystem/U3376/Y (OA21X1_RVT)                        0.07       1.16 r
+  mySubsystem/U914/Y (AO21X1_RVT)                         0.05       1.22 r
+  mySubsystem/U911/Y (OR2X1_LVT)                          0.04       1.26 r
+  mySubsystem/U893/Y (INVX0_RVT)                          0.02       1.28 f
+  mySubsystem/U3760/Y (NOR2X0_LVT)                        0.06       1.34 r
+  mySubsystem/U5551/Y (AND2X1_RVT)                        0.05       1.39 r
+  mySubsystem/U5061/Y (AND3X1_LVT)                        0.06       1.45 r
+  mySubsystem/U1442/Y (NAND3X0_LVT)                       0.03       1.48 f
+  mySubsystem/U1440/Y (NAND3X0_LVT)                       0.04       1.52 r
+  mySubsystem/U1308/Y (NAND3X0_LVT)                       0.03       1.55 f
+  mySubsystem/U1370/Y (NAND3X0_LVT)                       0.04       1.59 r
+  mySubsystem/U1360/Y (AO21X1_LVT)                        0.06       1.65 r
+  mySubsystem/U1355/Y (XOR2X2_LVT)                        0.08       1.73 f
+  mySubsystem/U1343/Y (INVX4_LVT)                         0.03       1.76 r
+  mySubsystem/U6315/Y (AO21X1_LVT)                        0.06       1.82 r
+  mySubsystem/U1694/Y (NAND2X0_RVT)                       0.03       1.85 f
+  mySubsystem/U1696/Y (NAND2X0_LVT)                       0.04       1.89 r
+  mySubsystem/mySubsystem/myFP_Mult/Delay11_block/GenBlock.theDelay/outreg_reg[2]/D (DFFARX1_HVT)
+                                                          0.00       1.89 r
+  data arrival time                                                  1.89
+
+  clock clk (rise edge)                                   1.98       1.98
+  clock network delay (ideal)                             0.00       1.98
+  mySubsystem/mySubsystem/myFP_Mult/Delay11_block/GenBlock.theDelay/outreg_reg[2]/CLK (DFFARX1_HVT)
+                                                          0.00       1.98 r
+  library setup time                                     -0.09       1.89
+  data required time                                                 1.89
+  --------------------------------------------------------------------------
+  data required time                                                 1.89
+  data arrival time                                                 -1.89
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+1

@@ -1,0 +1,67 @@
+ 
+****************************************
+Report : power
+        -analysis_effort low
+Design : Question_3
+Version: L-2016.03
+Date   : Sat Feb 24 22:32:48 2018
+****************************************
+
+
+Library(s) Used:
+
+    saed32hvt_ss0p95v125c (File: /usr/local/synopsys/SAED32_EDK/lib/stdcell_hvt/db_nldm/saed32hvt_ss0p95v125c.db)
+    saed32rvt_ss0p95v125c (File: /usr/local/synopsys/SAED32_EDK/lib/stdcell_rvt/db_nldm/saed32rvt_ss0p95v125c.db)
+    saed32lvt_ss0p95v125c (File: /usr/local/synopsys/SAED32_EDK/lib/stdcell_lvt/db_nldm/saed32lvt_ss0p95v125c.db)
+
+
+Operating Conditions: ss0p95v125c   Library: saed32rvt_ss0p95v125c
+Wire Load Model Mode: enclosed
+
+Design        Wire Load Model            Library
+------------------------------------------------
+Question_3             280000            saed32rvt_ss0p95v125c
+Subsystem              70000             saed32rvt_ss0p95v125c
+Subsystem1             70000             saed32rvt_ss0p95v125c
+Subsystem2             70000             saed32rvt_ss0p95v125c
+Subsystem3             70000             saed32rvt_ss0p95v125c
+Subsystem_Subsystem_FP_Add
+                       16000             saed32rvt_ss0p95v125c
+Subsystem1_Subsystem_FP_Add
+                       16000             saed32rvt_ss0p95v125c
+Subsystem2_Subsystem_FP_Add
+                       16000             saed32rvt_ss0p95v125c
+Subsystem3_Subsystem_FP_Add
+                       16000             saed32rvt_ss0p95v125c
+
+
+Global Operating Voltage = 0.95 
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000ff
+    Time Units = 1ns
+    Dynamic Power Units = 1uW    (derived from V,C,T units)
+    Leakage Power Units = 1pW
+
+
+  Cell Internal Power  =  55.9643 mW   (93%)
+  Net Switching Power  =   3.9982 mW    (7%)
+                         ---------
+Total Dynamic Power    =  59.9625 mW  (100%)
+
+Cell Leakage Power     =  17.6059 mW
+
+
+                 Internal         Switching           Leakage            Total
+Power Group      Power            Power               Power              Power   (   %    )  Attrs
+--------------------------------------------------------------------------------------------------
+io_pad             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+memory             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+black_box          0.0000            0.0000            0.0000            0.0000  (   0.00%)
+clock_network      0.0000            0.0000            0.0000            0.0000  (   0.00%)
+register       4.4978e+04          476.5289        3.3488e+09        4.8803e+04  (  62.92%)
+sequential         0.0000            0.0000            0.0000            0.0000  (   0.00%)
+combinational  1.0986e+04        3.5217e+03        1.4257e+10        2.8765e+04  (  37.08%)
+--------------------------------------------------------------------------------------------------
+Total          5.5964e+04 uW     3.9982e+03 uW     1.7606e+10 pW     7.7569e+04 uW
+1
