@@ -1,0 +1,103 @@
+ 
+****************************************
+Report : power
+        -analysis_effort low
+Design : CEN598_HW2
+Version: L-2016.03
+Date   : Sat Feb 24 18:47:38 2018
+****************************************
+
+
+Library(s) Used:
+
+    saed32hvt_ss0p95v125c (File: /usr/local/synopsys/SAED32_EDK/lib/stdcell_hvt/db_nldm/saed32hvt_ss0p95v125c.db)
+    saed32rvt_ss0p95v125c (File: /usr/local/synopsys/SAED32_EDK/lib/stdcell_rvt/db_nldm/saed32rvt_ss0p95v125c.db)
+    saed32lvt_ss0p95v125c (File: /usr/local/synopsys/SAED32_EDK/lib/stdcell_lvt/db_nldm/saed32lvt_ss0p95v125c.db)
+
+
+Operating Conditions: ss0p95v125c   Library: saed32rvt_ss0p95v125c
+Wire Load Model Mode: enclosed
+
+Design        Wire Load Model            Library
+------------------------------------------------
+CEN598_HW2             1000000           saed32rvt_ss0p95v125c
+Interleaved_MAC_PE     70000             saed32rvt_ss0p95v125c
+Interleaved_MAC_PE1    70000             saed32rvt_ss0p95v125c
+Interleaved_MAC_PE10   70000             saed32rvt_ss0p95v125c
+Interleaved_MAC_PE11   70000             saed32rvt_ss0p95v125c
+Interleaved_MAC_PE12   70000             saed32rvt_ss0p95v125c
+Interleaved_MAC_PE13   70000             saed32rvt_ss0p95v125c
+Interleaved_MAC_PE14   70000             saed32rvt_ss0p95v125c
+Interleaved_MAC_PE15   70000             saed32rvt_ss0p95v125c
+Interleaved_MAC_PE2    70000             saed32rvt_ss0p95v125c
+Interleaved_MAC_PE3    70000             saed32rvt_ss0p95v125c
+Interleaved_MAC_PE4    70000             saed32rvt_ss0p95v125c
+Interleaved_MAC_PE5    70000             saed32rvt_ss0p95v125c
+Interleaved_MAC_PE6    70000             saed32rvt_ss0p95v125c
+Interleaved_MAC_PE7    70000             saed32rvt_ss0p95v125c
+Interleaved_MAC_PE8    70000             saed32rvt_ss0p95v125c
+Interleaved_MAC_PE9    70000             saed32rvt_ss0p95v125c
+Interleaved_MAC_PE_MAC_PE_FP_Add
+                       16000             saed32rvt_ss0p95v125c
+Interleaved_MAC_PE1_MAC_PE_FP_Add
+                       16000             saed32rvt_ss0p95v125c
+Interleaved_MAC_PE10_MAC_PE_FP_Add
+                       16000             saed32rvt_ss0p95v125c
+Interleaved_MAC_PE11_MAC_PE_FP_Add
+                       16000             saed32rvt_ss0p95v125c
+Interleaved_MAC_PE12_MAC_PE_FP_Add
+                       16000             saed32rvt_ss0p95v125c
+Interleaved_MAC_PE13_MAC_PE_FP_Add
+                       16000             saed32rvt_ss0p95v125c
+Interleaved_MAC_PE14_MAC_PE_FP_Add
+                       16000             saed32rvt_ss0p95v125c
+Interleaved_MAC_PE15_MAC_PE_FP_Add
+                       16000             saed32rvt_ss0p95v125c
+Interleaved_MAC_PE2_MAC_PE_FP_Add
+                       16000             saed32rvt_ss0p95v125c
+Interleaved_MAC_PE3_MAC_PE_FP_Add
+                       16000             saed32rvt_ss0p95v125c
+Interleaved_MAC_PE4_MAC_PE_FP_Add
+                       16000             saed32rvt_ss0p95v125c
+Interleaved_MAC_PE5_MAC_PE_FP_Add
+                       16000             saed32rvt_ss0p95v125c
+Interleaved_MAC_PE6_MAC_PE_FP_Add
+                       16000             saed32rvt_ss0p95v125c
+Interleaved_MAC_PE7_MAC_PE_FP_Add
+                       16000             saed32rvt_ss0p95v125c
+Interleaved_MAC_PE8_MAC_PE_FP_Add
+                       16000             saed32rvt_ss0p95v125c
+Interleaved_MAC_PE9_MAC_PE_FP_Add
+                       16000             saed32rvt_ss0p95v125c
+
+
+Global Operating Voltage = 0.95 
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000ff
+    Time Units = 1ns
+    Dynamic Power Units = 1uW    (derived from V,C,T units)
+    Leakage Power Units = 1pW
+
+
+  Cell Internal Power  =  65.7061 mW   (91%)
+  Net Switching Power  =   6.7934 mW    (9%)
+                         ---------
+Total Dynamic Power    =  72.4994 mW  (100%)
+
+Cell Leakage Power     =  10.8871 mW
+
+
+                 Internal         Switching           Leakage            Total
+Power Group      Power            Power               Power              Power   (   %    )  Attrs
+--------------------------------------------------------------------------------------------------
+io_pad             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+memory             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+black_box          0.0000            0.0000            0.0000            0.0000  (   0.00%)
+clock_network      0.0000            0.0000            0.0000            0.0000  (   0.00%)
+register       4.9535e+04          646.7109        4.2480e+09        5.4431e+04  (  65.28%)
+sequential         0.0000            0.0000            0.0000            0.0000  (   0.00%)
+combinational  1.6170e+04        6.1465e+03        6.6391e+09        2.8955e+04  (  34.72%)
+--------------------------------------------------------------------------------------------------
+Total          6.5705e+04 uW     6.7932e+03 uW     1.0887e+10 pW     8.3387e+04 uW
+1
