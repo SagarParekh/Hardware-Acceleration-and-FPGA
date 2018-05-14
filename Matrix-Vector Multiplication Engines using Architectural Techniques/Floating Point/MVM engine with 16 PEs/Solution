@@ -1,4 +1,4 @@
-In this question as shown above we have an architecture such that it has 16 PE’s in parallel in order to process 64 channels of input. For this reason, we need an interleaving factor of 4. By this what we mean is that It need to store 4 channels of products in the feedback loop. Hence, we need at leas 4 registers to store the data.
+In this question as shown in the base model we have an architecture such that it has 16 PE’s in parallel in order to process 64 channels of input. For this reason, we need an interleaving factor of 4. By this what we mean is that It need to store 4 channels of products in the feedback loop. Hence, we need at leas 4 registers to store the data.
 
 But over here the floating-point unit has an inherit latency of 9 so we can have a latency of 9 and thus we can have an interleaving factor up to 9. But we only require 4 cycles for this problem and thus we will have to waste the first 5 cycles.
 
