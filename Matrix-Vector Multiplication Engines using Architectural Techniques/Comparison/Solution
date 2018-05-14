@@ -1,0 +1,3 @@
+Compare the two images attached, they show the resourse utilization.
+
+We can see that floating point design is affected due to the long word length.
