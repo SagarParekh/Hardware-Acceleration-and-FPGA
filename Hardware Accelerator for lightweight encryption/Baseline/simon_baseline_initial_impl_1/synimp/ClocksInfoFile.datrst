@@ -1,0 +1,17 @@
+#Mode 0
+#Resets
+GlobalReset -10
+#Enables
+#IO
+Port_Out5 1 
+Port_Out4 1 
+Port_Out3 1 
+Port_Out2 1 
+Port_Out1 1 
+Port_Out 1 
+Port_In5 1 
+Port_In4 1 
+Port_In3 1 
+Port_In2 1 
+Port_In1 1 
+Port_In 1 
