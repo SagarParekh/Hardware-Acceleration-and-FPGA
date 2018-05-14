@@ -1,0 +1,11 @@
+In this question as shown above we have an architecture such that it has 16 PE’s in parallel in order to process 64 channels of input. For this reason, we need an interleaving factor of 4. By this what we mean is that It need to store 4 channels of products in the feedback loop. Hence, we need at leas 4 registers to store the data.
+
+But over here the floating-point unit has an inherit latency of 9 so we can have a latency of 9 and thus we can have an interleaving factor up to 9. But we only require 4 cycles for this problem and thus we will have to waste the first 5 cycles.
+
+From this observation we can say that we can feed our column of data every 9 cycles and in every cycle, we can feed 16 elements. It takes 4 cycles to feed 64 elements and we can feed out column after wasting 5 channels in every cycle. So we can get valid 64 elements after every 9x64 cycles i.e. 576 cycles.
+
+Loop latency is P2+P3 which is 9.
+
+Minimum frequency can be evaluated as f >=(n/m) throughput.
+
+Here if we calculate with our given throughput which is 31.56 M, we get f>=284.04MHz.
