@@ -22,7 +22,7 @@ y_matlab = A*x;
 % list = get_param('CEN598_HW2/From Workspace','ObjectParameters');
 
 % Set the value of a parameter in a block
-BlockName = 'Question_5_2';
+BlockName = 'Base'; %Enter your model name here
 set_param([BlockName '/From Workspace'],'VariableName','At(1)')
 set_param([BlockName '/To Workspace'],'VariableName','yt1')
 set_param([BlockName '/To Workspace'],'SaveFormat',['Structure With Time'])
