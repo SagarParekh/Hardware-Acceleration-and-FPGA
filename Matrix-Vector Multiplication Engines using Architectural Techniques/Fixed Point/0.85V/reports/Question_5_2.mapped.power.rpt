@@ -1,0 +1,55 @@
+ 
+****************************************
+Report : power
+        -analysis_effort low
+Design : Question_5_2
+Version: L-2016.03
+Date   : Sat Feb 24 23:32:06 2018
+****************************************
+
+
+Library(s) Used:
+
+    saed32rvt_ss0p75v125c (File: /usr/local/synopsys/SAED32_EDK/lib/stdcell_rvt/db_nldm/saed32rvt_ss0p75v125c.db)
+    saed32lvt_ss0p75v125c (File: /usr/local/synopsys/SAED32_EDK/lib/stdcell_lvt/db_nldm/saed32lvt_ss0p75v125c.db)
+    saed32hvt_ss0p75v125c (File: /usr/local/synopsys/SAED32_EDK/lib/stdcell_hvt/db_nldm/saed32hvt_ss0p75v125c.db)
+
+
+Operating Conditions: ss0p75v125c   Library: saed32rvt_ss0p75v125c
+Wire Load Model Mode: enclosed
+
+Design        Wire Load Model            Library
+------------------------------------------------
+Question_5_2           35000             saed32rvt_ss0p75v125c
+
+
+Global Operating Voltage = 0.75 
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000ff
+    Time Units = 1ns
+    Dynamic Power Units = 1uW    (derived from V,C,T units)
+    Leakage Power Units = 1pW
+
+
+  Cell Internal Power  =   4.1632 mW   (98%)
+  Net Switching Power  = 104.3535 uW    (2%)
+                         ---------
+Total Dynamic Power    =   4.2675 mW  (100%)
+
+Cell Leakage Power     = 930.8258 uW
+
+
+                 Internal         Switching           Leakage            Total
+Power Group      Power            Power               Power              Power   (   %    )  Attrs
+--------------------------------------------------------------------------------------------------
+io_pad             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+memory             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+black_box          0.0000            0.0000            0.0000            0.0000  (   0.00%)
+clock_network      0.0000            0.0000            0.0000            0.0000  (   0.00%)
+register       4.0326e+03           21.9703        7.6629e+08        4.8209e+03  (  92.74%)
+sequential         0.0000            0.0000            0.0000            0.0000  (   0.00%)
+combinational    130.5237           82.3832        1.6453e+08          377.4419  (   7.26%)
+--------------------------------------------------------------------------------------------------
+Total          4.1632e+03 uW       104.3535 uW     9.3083e+08 pW     5.1984e+03 uW
+1

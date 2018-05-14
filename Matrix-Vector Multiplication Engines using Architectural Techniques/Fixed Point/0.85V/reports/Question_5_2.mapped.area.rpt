@@ -1,0 +1,34 @@
+ 
+****************************************
+Report : area
+Design : Question_5_2
+Version: L-2016.03
+Date   : Sat Feb 24 23:32:06 2018
+****************************************
+
+Information: Updating design information... (UID-85)
+Warning: Design 'Question_5_2' contains 1 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+Library(s) Used:
+
+    saed32rvt_ss0p75v125c (File: /usr/local/synopsys/SAED32_EDK/lib/stdcell_rvt/db_nldm/saed32rvt_ss0p75v125c.db)
+    saed32lvt_ss0p75v125c (File: /usr/local/synopsys/SAED32_EDK/lib/stdcell_lvt/db_nldm/saed32lvt_ss0p75v125c.db)
+    saed32hvt_ss0p75v125c (File: /usr/local/synopsys/SAED32_EDK/lib/stdcell_hvt/db_nldm/saed32hvt_ss0p75v125c.db)
+
+Number of ports:                         1418
+Number of nets:                          5630
+Number of cells:                         4928
+Number of combinational cells:           2498
+Number of sequential cells:              2430
+Number of macros/black boxes:               0
+Number of buf/inv:                        239
+Number of references:                      57
+
+Combinational area:               5921.809417
+Buf/Inv area:                      362.663489
+Noncombinational area:           17302.632106
+Macro/Black Box area:                0.000000
+Net Interconnect area:            8530.806344
+
+Total cell area:                 23224.441523
+Total area:                      31755.247867
+1

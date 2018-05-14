@@ -1,0 +1,64 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : Question_5_2
+Version: L-2016.03
+Date   : Sat Feb 24 23:32:06 2018
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: ss0p75v125c   Library: saed32rvt_ss0p75v125c
+Wire Load Model Mode: enclosed
+
+  Startpoint: mySubsystem2/mySubsystem/Mult_block.multInp2_block/GenBlock.theDelay/outreg_reg[1]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: mySubsystem2/mySubsystem/Mult_block.multOut_block/GenBlock.theDelay/delayline_reg[0][3]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  Question_5_2       35000                 saed32rvt_ss0p75v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  mySubsystem2/mySubsystem/Mult_block.multInp2_block/GenBlock.theDelay/outreg_reg[1]/CLK (DFFARX1_RVT)
+                                                          0.00 #     0.00 r
+  mySubsystem2/mySubsystem/Mult_block.multInp2_block/GenBlock.theDelay/outreg_reg[1]/QN (DFFARX1_RVT)
+                                                          0.25       0.25 f
+  U2720/Y (NOR2X0_RVT)                                    0.21       0.46 r
+  U3281/SO (HADDX1_RVT)                                   0.19       0.66 f
+  U3282/Y (OR2X1_RVT)                                     0.11       0.76 f
+  U1794/Y (AOI21X1_RVT)                                   0.18       0.95 r
+  U1793/Y (OAI21X2_RVT)                                   0.19       1.14 f
+  U3289/Y (AOI21X1_LVT)                                   0.13       1.26 r
+  U2740/Y (OAI21X1_LVT)                                   0.11       1.38 f
+  U3293/Y (AOI21X1_LVT)                                   0.13       1.50 r
+  U3356/Y (INVX1_LVT)                                     0.03       1.54 f
+  U1917/Y (AOI21X1_RVT)                                   0.19       1.72 r
+  U1915/Y (XOR2X1_LVT)                                    0.13       1.85 f
+  mySubsystem2/mySubsystem/Mult_block.multOut_block/GenBlock.theDelay/delayline_reg[0][3]/D (DFFARX1_RVT)
+                                                          0.00       1.85 f
+  data arrival time                                                  1.85
+
+  clock clk (rise edge)                                   1.98       1.98
+  clock network delay (ideal)                             0.00       1.98
+  mySubsystem2/mySubsystem/Mult_block.multOut_block/GenBlock.theDelay/delayline_reg[0][3]/CLK (DFFARX1_RVT)
+                                                          0.00       1.98 r
+  library setup time                                     -0.13       1.85
+  data required time                                                 1.85
+  --------------------------------------------------------------------------
+  data required time                                                 1.85
+  data arrival time                                                 -1.85
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+1
